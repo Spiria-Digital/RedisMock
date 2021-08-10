@@ -174,6 +174,12 @@ class RedisMock
         return $this->returnPipedInfo(1);
     }
 
+    public function expireAt($key, $expirationDate)
+    {
+        $differenceInSeconds = $expirationDate - strtotime("now");
+        return $this->expire($key, $differenceInSeconds);
+    }
+
     public function incr($key)
     {
         return $this->incrby($key, 1);
