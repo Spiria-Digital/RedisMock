@@ -23,6 +23,7 @@ Redis command                                    | Description
 **DECRBYFLOAT** *key* *decrement*                | Decrements the float value of a key by `decrement` value
 **EXISTS** *key*                                 | Determines if a key exists
 **EXPIRE** *key* *seconds*                       | Sets a key's time to live in seconds
+**EXPIREAT** *key* *timestamp*                   | Sets a key's time to live until given timestamp
 **FLUSHDB**                                      | Flushes the database
 **GET** *key*                                    | Gets the value of a key
 **HDEL** *key* *field*                           | Delete one hash fields
